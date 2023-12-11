@@ -6,7 +6,6 @@ mongoose.connect(process.env.DATABASE_URL);
 const Book = require('./models/book');
 
 async function seed() {
-  await Book.deleteMany({});
 
   const books = [
     {
@@ -28,6 +27,16 @@ async function seed() {
       title: 'The Return of the King',
       description: 'The Grey Havens',
       status: 'Available',
+    },
+    {
+      title: 'Harry Potter and the Chamber of Secrets',
+      description: 'The Heir of Slytherin',
+      status: 'Unavailable',
+    },
+    {
+      title: 'Lord of the Flies',
+      description: 'Piggy and the Conch',
+      status: 'Unavailable',
     },
   ];
 
