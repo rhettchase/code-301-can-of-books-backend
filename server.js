@@ -9,7 +9,7 @@ const notFound = require('./handlers/notFound');
 const getBooks = require('./handlers/getBooks');
 const errorHandler = require('./handlers/errorHandler');
 
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect(process.env.MONGODB_URI);
 const PORT = process.env.PORT || 3001;
 
 const app = express();
