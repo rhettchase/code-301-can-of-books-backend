@@ -5,6 +5,9 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const Book = require('./models/book');
+const notFound = require('./handlers/notFound');
+const getBooks = require('./handlers/getBooks');
+const errorHandler = require('./handlers/errorHandler');
 
 mongoose.connect(process.env.DATABASE_URL);
 const PORT = process.env.PORT || 3001;
@@ -16,21 +19,14 @@ app.use(cors());
 
 // routes
 app.get('/books', getBooks);
+app.get('*', notFound);
+app.use('*', errorHandler); // * represents any type of request at any path
 
 
-// handlers
-async function getBooks(request, response) {
-  console.log('Handling /books request');
-  const filterQuery = {};
+app.use((error, request, response) => {
+  console.error(error);
+  response.status(500).send(error.message);
+});
 
-  if(request.query.status) {
-    filterQuery.status = request.query.status;
-  }
-
-  const books = await Book.find(filterQuery);
-  console.log('Books retrieved from the database:', books);
-
-  response.status(200).json(books);
-}
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
