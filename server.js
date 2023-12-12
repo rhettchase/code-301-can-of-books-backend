@@ -17,13 +17,6 @@ app.use(cors());
 // routes
 app.get('/books', getBooks);
 
-app.get('/test', (request, response) => {
-  const Cat = mongoose.model('Cat', { name: String });
-  const kitty = new Cat({ name: 'Zildjian' });
-  kitty.save().then(() => console.log('meow'));
-  const cats = [kitty];
-  response.status(200).json(cats);
-});
 
 // handlers
 async function getBooks(request, response) {

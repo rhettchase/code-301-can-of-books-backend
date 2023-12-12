@@ -9,18 +9,23 @@ async function seed() {
 
   const books = [
     {
-      title: 'The Hobbit',
-      description: 'There and Back Again',
+      title: 'The Hunger Games',
+      description: 'In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.',
+      status: 'Unavailable',
+    },
+    {
+      title: 'Wheel of Time',
+      description: 'The Eye of the World',
       status: 'Available',
     },
     {
-      title: 'The Fellowship of the Ring',
-      description: 'A Long Expected Party',
+      title: 'Harry Potter and the Sorcerers Stone',
+      description: 'An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world',
       status: 'Available',
     },
     {
-      title: 'The Two Towers',
-      description: 'The Taming of Smeagol',
+      title: 'Twilight',
+      description: 'When Bella Swan moves to a small town in the Pacific Northwest to live with her father, she meets the reclusive Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire.',
       status: 'Available',
     },
     {
