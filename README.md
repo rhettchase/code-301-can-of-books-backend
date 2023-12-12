@@ -1,27 +1,48 @@
-# Can of Books
+# Can of Books Backend
 
-**Author**: Rhett Chase, Kaitlin Davis
+**Author**: Rhett Chase || Kaitlin Davis
+
 **Version**: 1.0.0
-<!-- increment the patch/fix version number if you make more commits past your first submission -->
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
+
+Can of Books is a user-friendly application designed to simplify the process of finding books. Whether you're a book enthusiast, a student, or just someone looking for a good read, Can of Books helps you locate books with various titles with ease.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+
+In order to get started, you want to make a repo on GitHUB and then clone that repository to your local machine. In this case, you will have two. One front-end and one back end. Then, install the dependencies you need. Set up any environmental variables. Start the sever.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+### Frontend
+
+* Language: JavaScript with React
+* Styling: CSS
+
+### Backend
+
+* Mongoose and Bootstrap libraries
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+12-11-2023 6:30pm - Implimented a fully functional server that displays available books.
 
-## Time Estimates
-<!-- See below -->
+## Estimates
+
+Name of feature: Set Up, Storage, and Book Component
+
+Estimate of time needed to complete: 2.5 hours
+
+Start time: 4:00pm
+
+Finish time: 6:30pm
+
+Actual time needed to complete: 2.5 hours
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
+Chat GPT
+
+## Lighthouse Score
+
+![Lighthouse Score for fornt end application](img/lighthouse.png)
