@@ -12,7 +12,7 @@ module.exports = async function getBooks(request, response) {
       
         const books = await Book.find(filterQuery);
         console.log('Books retrieved from the database:', books);
-        response.status(200).json(books);
+        response.status(200).send(books);
     } catch (error) {
         console.error(error);
         response.status(500).send(error.message);
