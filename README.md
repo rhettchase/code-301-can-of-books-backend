@@ -11,9 +11,13 @@ Application is the back-end database for books. It will take in a selection of s
 The application features a custom server, which provides data for the Can of Books front-end application.
 Can of Books is a user-friendly application designed to simplify the process of finding books. Whether you're a book enthusiast, a student, or just someone looking for a good read, Can of Books helps you locate books with various titles with ease.
 
+[Front-end GitHub Repo](https://github.com/KaitlinDa/can-of-books-frontend)
+[Back-end GitHub Repo](https://github.com/rhettchase/code-301-can-of-books-backend/tree/main)
+[Deployed Site](https://can-of-books-rckd.netlify.app/)
+
 ## Getting Started
 
-In order to get started, you want to make a repo on GitHUB and then clone that repository to your local machine. In this case, you will have two. One front-end and one back end. Then, install the dependencies you need. Set up any environmental variables. Start the sever.
+In order to get started, you make a repo on GitHub and clone the repository to your local machine. There are two repositories for this app (front-end and back-end). Then, install the dependencies you need. Set up any environmental variables on Render. Start the sever.
 
 ### Install Dependencies
 
