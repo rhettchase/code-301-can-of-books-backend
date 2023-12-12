@@ -2,6 +2,11 @@
 
 **Author**: Rhett Chase || Kaitlin Davis
 
+<<<<<<< HEAD
+=======
+**Author**: Rhett Chase, Kaitlin Davis
+
+>>>>>>> d972f558d999c526abe93e74fda05ec2bbff613d
 **Version**: 1.0.0
 
 ## Overview
@@ -27,6 +32,7 @@ In order to get started, you want to make a repo on GitHUB and then clone that r
 
 12-11-2023 6:30pm - Implimented a fully functional server that displays available books.
 
+<<<<<<< HEAD
 ## Estimates
 
 Name of feature: Set Up, Storage, and Book Component
@@ -38,6 +44,11 @@ Start time: 4:00pm
 Finish time: 6:30pm
 
 Actual time needed to complete: 2.5 hours
+=======
+## Time Estimates
+
+### 
+>>>>>>> d972f558d999c526abe93e74fda05ec2bbff613d
 
 ## Credit and Collaborations
 
