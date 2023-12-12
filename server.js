@@ -5,8 +5,10 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const Book = require('./models/book');
-const notFound = require('./handlers/notFound');
 const getBooks = require('./handlers/getBooks');
+const createBooks = require('./handlers/createBooks');
+const deleteBook = require('./handlers/deleteBook');
+const notFound = require('./handlers/notFound');
 const errorHandler = require('./handlers/errorHandler');
 
 const app = express();
@@ -26,6 +28,8 @@ app.use(express.json());
 
 // routes
 app.get('/books', getBooks);
+app.post('/books', createBooks);
+app.delete('/books/:id', deleteBook);
 app.get('*', notFound);
 app.use('*', errorHandler); // * represents any type of request at any path
 
