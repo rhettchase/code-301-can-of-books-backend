@@ -8,6 +8,7 @@ const Book = require('./models/book');
 const getBooks = require('./handlers/getBooks');
 const createBooks = require('./handlers/createBooks');
 const deleteBook = require('./handlers/deleteBook');
+const updateBook = require('./handlers/updateBook');
 const notFound = require('./handlers/notFound');
 const errorHandler = require('./handlers/errorHandler');
 
@@ -30,12 +31,15 @@ app.use(express.json());
 app.get('/books', getBooks);
 app.post('/books', createBooks);
 app.delete('/books/:id', deleteBook);
+app.put('/books/:id', updateBook);
 app.get('*', notFound);
 app.use('*', errorHandler); // * represents any type of request at any path
 
-app.use((error, request, response) => {
+app.use((error, request, response, next) => {
   console.error(error);
   response.status(500).send(error.message);
+  next(); // Call next to pass the error to the next middleware
 });
+
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
