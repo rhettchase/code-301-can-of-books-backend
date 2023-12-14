@@ -2,7 +2,7 @@
 
 **Author**: Rhett Chase || Kaitlin Davis
 
-**Version**: 2.0.0
+**Version**: 2.1.0
 
 ## Overview
 
@@ -40,6 +40,7 @@ In order to get started, you make a repo on GitHub and clone the repository to y
 
 12-11-2023 6:30pm - Implemented Mongoose to the custom server. Ensured local Mongo database is running and connected the Mongo database from within the server code. Developed `/books` route, using a REST client to hit the route, enabling verification of what the server is returning. When a client sends a `GET` to the `/books` route, the server retrieves all of the books from the `books` collection, and return them as JSON in the response object.
 12-12-2023 7:30 pm - Deployed external database `MongoDB Atlas` and server `render`. Added a new route and handler function to your server, to respond to `POST` requests to `/books`.(book-creation end point). Added a server end point to handle `DELETE` requests to `/books/:id`. Verified functioning both on Thunder Client and on front-end.
+12-13-2023 2:00 pm - Updated server code to handle `PUT` requests to a `/book/:id` route. User is able to update exisiting book details, and the database wiill return the updated book.
 
 ## Estimates
 
@@ -63,6 +64,13 @@ Estimate of time needed to complete: 1 hour
 Start time: 1:15pm
 Finish time: 1:45pm
 Actual time needed to complete: 30 min
+
+### Lab 13 - Update Book Back-end
+
+Estimate of time needed to complete: 1 hour
+Start time: 12:30pm
+Finish time: 1:30pm
+Actual time needed to complete: 1 hour
 
 ## Credit and Collaborations
 
